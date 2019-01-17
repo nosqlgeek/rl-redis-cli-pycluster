@@ -102,9 +102,7 @@ Output:
 
 ## How to build?
 
-Here some build requirements.
-
-* The build box should have Python 2.7 and `pip` installed
+The build box should have Python 2.7 and `pip` installed
 
 The build script is working the following way:
 
