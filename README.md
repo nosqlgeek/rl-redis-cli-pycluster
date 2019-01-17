@@ -109,7 +109,7 @@ The build script is working the following way:
 1. Create Python 2.7 VirtualEnv
 2. Install all dependencies to this environment
 3. Use `PyInstaller` in order to package a standalone version (doesn't need Python installed on the target machnine)
-4. Wraps the dist package as a TAR file 
+4. Wrap the dist package into a TAR file 
 
 The result is the file `redis-cli-pycluster.tar`.
 
