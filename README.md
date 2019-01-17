@@ -88,6 +88,8 @@ Output:
 
 ### Key-less Command with Argument
 
+Command:
+
 ```
 python redis-cli-pycluster.py --host=myhost --port=12345 'SCAN 0'
 ```
