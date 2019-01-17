@@ -46,7 +46,7 @@ If the COMMAND argument contains spaces (i.e. SET hello world) then it's require
 
 ### KV Command
 
-* `python redis-cli-pycluster.py --host=myhost --port=12345  'SET hello world'`
+`python redis-cli-pycluster.py --host=myhost --port=12345  'SET hello world'`
 
 Output:
 
@@ -56,8 +56,9 @@ True
 
 ### Key-only Command
 
-* `python redis-cli-pycluster.py --host=myhost --port=12345 --passwd mypass  'GET hello'`
-
+```
+python redis-cli-pycluster.py --host=myhost --port=12345 --passwd mypass  'GET hello'
+```
 
 Output:
 
@@ -67,7 +68,7 @@ world
 
 ### Key-less Command
 
-* `python redis-cli-pycluster.py --host=myhost --port=12345 'DBSIZE'`
+`python redis-cli-pycluster.py --host=myhost --port=12345 'DBSIZE'`
 
 Output:
 
