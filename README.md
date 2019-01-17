@@ -1,4 +1,4 @@
-#  Redis OSS-Cluster Command-line Tool
+#  Redis OSS-Cluster Command line Tool
 
 This is a very basic cluster capable command line tool for Redis (OSS Cluster).
 
