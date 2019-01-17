@@ -12,7 +12,7 @@ Redis is coming with a very sophisticated command line tool, called `redis-cli`.
 4. Follow the redirect response by replacing the current connection with a new one to this shard
 5. Execute the command again
 
-There is a challange when a command is executed which doesn't get a key passed. In this case `redis-cli` will just execute the command to the current connection which then causes partial results (i.e. only the size of the shard to which the tool was connected). The tool `redis-cli-pycluster` is using the `redispy-cluster` smart client library which means that it behaves different:
+There is a challange when a command is executed which doesn't get a key passed. In this case `redis-cli` will just execute the command to the current connection which then causes partial results (i.e. only the size of the shard to which the tool was connected). The tool `redis-cli-pycluster` is using the `redispy-cluster` smart client library which means that it behaves differently:
 
 1. Establish the connection one of the endpoints
 2. Fetch the cluster topology by executing `CLUSTER SLOTS`
