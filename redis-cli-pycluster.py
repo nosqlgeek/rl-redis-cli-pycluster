@@ -83,7 +83,6 @@ def exec_command(rc, command):
 @click.option("--port", default=6379, prompt="Port", help="Database port")
 @click.option("--passwd", default="", help="Database password")
 @click.argument("command")
-
 def main(host, port, passwd, command):
 
     rc = connect(host, port, passwd)
