@@ -14,7 +14,7 @@ Redis is coming with a very sophisticated command line tool, called `redis-cli`.
 
 There is a challange when a command is executed which doesn't get a key passed. In this case `redis-cli` will just execute the command to the current connection which then causes partial results (i.e. only the size of the shard to which the tool was connected). The tool `redis-cli-pycluster` is using the `redispy-cluster` smart client library which means that it behaves differently:
 
-1. Establish the connection one of the endpoints
+1. Establish the connection to one of the endpoints
 2. Fetch the cluster topology by executing `CLUSTER SLOTS`
 3. Establish a connection to each endpoint in the cluster
 4. A command which is getting a key passed will be executed against the right endpoint from the very beginning
