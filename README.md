@@ -18,7 +18,7 @@ There is a challange when a command is executed which doesn't get a key passed. 
 2. Fetch the cluster topology by executing `CLUSTER SLOTS`
 3. Establish a connection to each endpoint in the cluster
 4. A command which is getting a key passed will be executed against the right endpoint from the very beginning
-5. Commands without key arguments will be executed in parallel agains every endpoint. The result is grouped by endpoint.
+5. Commands without key arguments will be executed in parallel against every endpoint. The result is grouped by endpoint.
 
 
 ## Limitations
