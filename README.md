@@ -21,7 +21,10 @@ There is a challange when a command is executed which doesn't get a key passed. 
 5. Commands without key arguments will be executed in parallel agains every endpoint. The result is grouped by endpoint.
 
 
-> This command line tool is not (yet) interactive, but it allows to pass a command as an argument.
+## Limitations
+
+* This command line tool is not (yet) interactive, but it allows to pass a command as an argument
+* The tool doesn't return the result in the same format as `redis-cli` does. The response is already parsed and converted into an equivalent Python type/object (i.e. lists, dictonary, boolean, ...). The output is the string representation of this value.
 
 
 ## Usage
